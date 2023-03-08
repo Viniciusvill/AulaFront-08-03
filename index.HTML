@@ -3,77 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <title>CD Player</title>
+    <style>
+        body{
+            background-image: url('https://media.istockphoto.com/id/610855984/vector/abstract-background.jpg?s=612x612&w=0&k=20&c=LCD4gd4Wk1ffPJhIvC51Y2b96KgF29rkMeB1b3fNqO4='); 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .audio{
+            background-color: rgba(36, 33, 33, 0.849);
+            text-align: center;
+        }
+
+        .audio h1{
+            font-size: 30px; color: cadetblue;
+        }
+
+        .audio h2{
+            font-size: 26px; color: cadetblue;
+        }
+
+        .audio .playlist{
+            color: honeydew;
+            list-style: none
+        }
+
+        .audio .playlist .playing{
+            color:cadetblue;
+        }
+
+        .video {
+            background-color: rgba(36, 33, 33, 0.849);
+            text-align: center;
+        }
+
+        .video h1{
+            font-size: 30px; color: cadetblue;
+        }
+
+        .lyrics {
+            background-color: rgba(36, 33, 33, 0.849);
+            text-align: center;
+        }
+
+        .lyrics h1{
+            font-size: 30px; color: cadetblue;
+        }
+
+        .lyrics p{
+            color: honeydew;
+        }
+
+    </style>
 </head>
 <body>
-    <nav>
-        <center><h1>
+    <nav class="audio">
+        <h1 >
             Adele<br>
             30
-        </h1></center>
-        <center><img src="30.png"; alt="Album30"; width="50%"; aling="middle"; ></center>
-
-        <center><audio controls>
-            <source src="audios/30/Adele - Easy On Me (Official Lyric Video).mp3">
-        </audio></center>
-        <p style="text-align: center;">
-                    Album
-                    <li>
-                        01.
-                        Strangers By Nature
-                    </li>
-                    <li style="color: blueviolet;">
-                        02.
-                        Easy On Me   
-                    </li>
-                    <li>
-                        03.
-                        My Little Love
-                        
-                    </li>
-                    <li>
-                        04.
-                        Cry Your Heart Out
-                    
-                    </li>
-                    <li>
-                        05.
-                        Oh My God
-                        
-                    </li>
-                    <li>
-                        06.
-                        Can I Get It?
-                        
-                    </li>
-                    <li>
-                        07.
-                        I Drink Wine
-                        
-                    </li>
-                    <li>
-                        08.
-                        All Night Parking (with Erroll Garner)
-                        
-                    </li>
-                    <li>
-                        09.
-                        Woman Like Me
-                        
-                    </li>
-                    <li>
-                        10.
-                        Hold On
-                        
-                    </li>
-                    <li>
-                        11.
-                        To Be Loved
-                        
-                    </li>
-                    <li>
-                        12.
-                        Love Is a Game
-                    </li>
+        </h1>
+        <div class="cover-img">
+            <img src="30.png"; alt="Album30"; width="50%"; aling="middle";>
+        </div>
+        <div class="audio-img">
+            <audio controls>
+                <source src="audios/30/Adele - Easy On Me (Official Lyric Video).mp3">
+            </audio>
+        </div>
+        <h2>
+            Álbum
+        </h2>
+            <ul class="playlist">
+                <li>
+                    01. Strangers By Nature
+                </li>
+                <li   class="playing">
+                    02. Easy On Me   
+                </li>
+                <li>
+                    03. My Little Love 
+                </li>
+                <li>
+                    04. Cry Your Heart Out       
+                </li>
+                <li>
+                    05. Oh My God
+                </li>
+                <li>
+                    06. Can I Get It?
+                </li>
+                <li>
+                    07. I Drink Wine
+                </li>
+                <li>
+                    08. All Night Parking (with Erroll Garner)
+                </li>
+                <li>
+                    09. Woman Like Me
+                </li>
+                <li>
+                    10. Hold On
+                </li>
+                <li>
+                        11. To Be Loved
+                </li>
+                <li>
+                    12. Love Is a Game
+                </li>
+            </ul>
+    </nav>
+    <nav class="video">
+        <h1>
+            Video Clipe
+        </h1>
+        <video width="720" height="480" controls>
+            <source src="video/Adele - Easy On Me (Official Video).mp4" type="video/mp4">
+        </video>
+    </nav>
+    <nav class="lyrics">
+        <h1>
+            Letra da Música
+        </h1>
+        <p>
+            There ain't no gold in this river<br>
+            That I've been washin' my hands in forever<br>
+            I know there is hope in these waters<br>
+            But I can't bring myself to swim<br>
+            When I am drowning in this silence<br>
+            Baby, let me in<br>
+            <br>
+            Go easy on me, baby<br>
+            I was still a child<br>
+            Didn't get the chance to<br>
+            Feel the world around me<br>
+            I had no time to choose<br>
+            What I chose to do<br>
+            So go easy on me<br>
+            <br>
+            There ain't no room for things to change<br>
+            When we are both so deeply stuck in our ways<br>
+            You can't deny how hard I've tried<br>
+            I changed who I was to put you both first<br>
+            But now I give up<br>
+            <br>
+            Go easy on me, baby<br>
+            I was still a child<br>
+            Didn't get the chance to<br>
+            Feel the world around me<br>
+            Had no time to choose<br>
+            What I chose to do<br>
+            So go easy on me<br>
+            <br>
+            I had good intentions<br>
+            And the highest hopes<br>
+            But I know right now<br>
+            It probably doesn't even show<br>
+            <br>
+            Go easy on me, baby<br>
+            I was still a child<br>
+            I didn't get the chance to<br>
+            Feel the world around me<br>
+            I had no time to choose<br>
+            What I chose to do<br>
+            So go easy on me<br>
         </p>
     </nav>
 </body>
